@@ -102,16 +102,16 @@ export default function Home({ exploreData, cardsData }) {
   );
 }
 
-export async function getStaticProps() {
-  const exploreData = await fetch(process.env.API_URL2).then((res) =>
-    res.json()
-  );
+// export async function getStaticProps() {
+//   const exploreData = await fetch(process.env.API_URL2).then((res) =>
+//     res.json()
+//   );
 
-  const cardsData = await fetch(process.env.API_URL3).then((res) => res.json());
-  return {
-    props: {
-      exploreData,
-      cardsData,
-    },
-  };
-}
+//   const cardsData = await fetch(process.env.API_URL3).then((res) => res.json());
+//   return {
+//     props: {
+//       exploreData,
+//       cardsData,
+//     },
+//   };
+// }
