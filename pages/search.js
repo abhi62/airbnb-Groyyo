@@ -69,9 +69,9 @@ function Search({ searchResult }) {
 export default Search;
 
 export async function getServerSideProps() {
-  const searchResult = await fetch(process.env.API_URL1).then((res) =>
-    res.json()
-  );
+  const searchResult = await fetch(
+    process.env.API_URL1 || "http://localhost:3000/api/hello"
+  ).then((res) => res.json());
 
   return {
     props: {

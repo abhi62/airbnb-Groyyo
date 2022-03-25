@@ -21,3 +21,4 @@
 6. Add as favorite
 7. Sign in (google api fix needed)
 8. payment (api fix needed)
+9. PWA

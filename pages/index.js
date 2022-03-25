@@ -103,11 +103,13 @@ export default function Home({ exploreData, cardsData }) {
 }
 
 export async function getStaticProps() {
-  const exploreData = await fetch(process.env.API_URL2).then((res) =>
-    res.json()
-  );
+  const exploreData = await fetch(
+    process.env.API_URL2 || "http://localhost:3000/api/hello2"
+  ).then((res) => res.json());
 
-  const cardsData = await fetch(process.env.API_URL3).then((res) => res.json());
+  const cardsData = await fetch(
+    process.env.API_URL3 || "http://localhost:3000/api/hello3"
+  ).then((res) => res.json());
   return {
     props: {
       exploreData,
