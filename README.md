@@ -4,7 +4,7 @@
 
 1. Nextjs
 2. tailwindcss
-3. next js api for data
+3. next js api for all the static data
 
 ### How to run app
 
