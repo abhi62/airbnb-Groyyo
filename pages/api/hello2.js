@@ -1,6 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
-export default function helloAPI(req, res) {
+export default function helloAPI2(req, res) {
   res.status(200).json([
     {
       img: "/images/front.jpeg",
