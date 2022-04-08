@@ -68,7 +68,7 @@ function Search({ searchResult }) {
 
 export default Search;
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const searchResult = await fetch(
     process.env.API_URL1 || "http://localhost:3000/api/hello"
   ).then((res) => res.json());

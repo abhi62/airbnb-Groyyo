@@ -102,7 +102,7 @@ export default function Home({ exploreData, cardsData }) {
   );
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const exploreData = await fetch(
     process.env.API_URL2 || "http://localhost:3000/api/hello2"
   ).then((res) => res.json());
